@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="public/output.css">
+    <script src="navbar.js" defer></script>
+</head>
+
+<body class="destination-bg-img h-screen overflow-y-auto font-barlow bg-fixed grid grid-cols-1 grid-rows-[auto_1fr]">
+    <!--Used bg-fixed to sticky-->
+
+    <nav class="flex justify-between  items-center p-6 sm:p-0 sm:pl-6 lg:pl-14 lg:pt-10 self-start">
+
+        <img src="assets/shared/logo.svg" alt="logo" class="">
+
+        <!-- Open Button Navbar -->
+        <button id="navbar-open-btn" class="focus:scale-110 sm:hidden">
+            <img src="assets/shared/icon-hamburger.svg" alt="img" class="">
+        </button>
+
+        <!-- Line between logo and nav menu -->
+        <div class="w-1/3 h-px bg-white opacity-10 relative left-16 hidden lg:block"></div>
+
+        <ul id="navbar"
+            class="text-white uppercase tracking-widest select-none fixed z-20 h-screen top-0 right-0 w-2/3 bg-[#D0D6F9] bg-opacity-5 backdrop-blur-xl flex-col gap-6 pt-36 pl-10 hidden sm:static sm:w-auto sm:flex sm:h-24 sm:p-0 sm:flex-row sm:justify-center sm:px-12 sm:text-sm sm:gap-10 lg:w-2/3 lg:p-0 lg:text-base lg:gap-14 ">
+            <li class="sm:h-full">
+                <a href="index.html"
+                    class="flex gap-4 relative py-1 h-full items-center focus:text-slate-400 lg:gap-2 group lg:hover:text-gray-300 transition-colors ease-out duration-300">
+                    <span class="font-bold sm:hidden lg:block">00</span> <span class="font-normal">Home</span>
+                    <div class="hover-bar"></div>
+                </a>
+            </li>
+            <li class="sm:h-full">
+                <a href="destination.html"
+                    class="flex gap-4 py-1 h-full items-center relative focus:text-slate-400 lg:gap-2 ">
+                    <span class="font-bold sm:hidden lg:block">01</span> <span class="font-normal">Destination</span>
+                    <div class="active-bar"></div>
+                </a>
+            </li>
+            <li class="sm:h-full">
+                <a href="#"
+                    class="flex gap-4 py-1 h-full items-center relative focus:text-slate-400 lg:gap-2 group lg:hover:text-gray-300 transition-colors ease-out duration-300">
+                    <span class="font-bold sm:hidden lg:block">02</span> <span class="font-normal">Crew</span>
+                    <div class="hover-bar"></div>
+                </a>
+            </li>
+            <li class="sm:h-full lg:mr-16">
+                <a href="#"
+                    class="flex gap-4 py-1 h-full items-center relative focus:text-slate-400 lg:gap-2 group lg:hover:text-gray-300 transition-colors ease-out duration-300">
+                    <span class="font-bold sm:hidden lg:block">03</span> <span class="font-normal">Technology</span>
+                    <div class="hover-bar"></div>
+                </a>
+            </li>
+
+            <!-- Close Button Navbar  -->
+            <button id="navbar-close-btn" class="focus:scale-110 absolute top-9 right-6 sm:hidden">
+                <img src="./assets/shared/icon-close.svg" alt="img" class="">
+            </button>
+
+        </ul>
+
+    </nav>
+
+    <main class="text-white lg:self-center">
+
+        <section
+            class="max-w-7xl px-6 sm:px-7 lg:px-12 mx-auto h-full lg:h-auto grid grid-cols-1 content-evenly lg:content-start lg:grid-cols-2 lg:gap-y-20 lg:gap-x-28">
+
+            <!-- grid-items-one -->
+            <p class="uppercase flex gap-4 tracking-widest justify-center items-center sm:justify-start">
+                <span class="text-[#D0D6F9] font-bold md:text-xl">01</span>
+                <span class="md:text-xl">Pick your destination</span>
+            </p>
+
+            <!-- grid-items-two -->
+            <div class="my-4 lg:row-start-2 lg:row-end-3">
+                <img src="assets/destination/image-moon.webp" alt=""
+                    class="block w-[10.625rem] sm:w-[300px] md:w-[400px] lg:w-[445px] mx-auto ">
+            </div>
+
+            <!-- grid-items-three -->
+            <div class="uppercase text-center lg:text-start lg:row-start-2 lg:row-end-3 lg:self-center">
+                <ul
+                    class="flex justify-center items-center gap-6 sm:gap-10 md:gap-12 text-sm sm:text-base mb-4 lg:mb-8 select-none lg:justify-start">
+                    <li class="group">
+                        <a href="#">Moon</a>
+                        <div class="w-full h-[3px] mt-1 group-hover:bg-slate-600 transition-colors duration-150 ease-in active "></div>
+                    </li>
+                    <li class="group">
+                        <a href="#">Mars</a>
+                        <div class="w-full h-[3px] mt-1 group-hover:bg-slate-600 transition-colors duration-150 ease-in"></div>
+                    </li>
+                    <li class="group">
+                        <a href="#">Europa</a>
+                        <div class="w-full h-[3px] mt-1 group-hover:bg-slate-600 transition-colors duration-150 ease-in"></div>
+                    </li>
+                    <li class="group">
+                        <a href="#">Titan</a>
+                        <div class="w-full h-[3px] mt-1 group-hover:bg-slate-600 transition-colors duration-150 ease-in"></div>
+                    </li>
+                </ul>
+                <h1 class="font-bellefair text-[3.5rem] md:text-[5rem] lg:text-8xl mb-2 lg:mb-4">Moon</h1>
+                <p
+                    class="text-[0.9375rem] tracking-[1px] leading-6 normal-case sm:text-base lg:text-lg sm:leading-7 lg:leading-8 sm:max-w-[75ch] mx-auto lg:max-w-[51ch] lg:ml-0">
+                    See our planet as you’ve never seen it before. A perfect relaxing trip away to help
+                    regain perspective and come back refreshed. While you’re there, take in some history
+                    by visiting the Luna 2 and Apollo 11 landing sites.
+                </p>
+
+                <hr class="bg-white opacity-20 my-8  lg:my-10 mx-auto lg:ml-0 sm:max-w-[79ch] lg:max-w-[51ch]">
+
+                <div class="flex flex-col gap-8 sm:flex-row lg:gap-20 sm:max-w-[70ch] sm:mx-auto lg:ml-0">
+                    <div class="grow lg:grow-0">
+                        <p class="word-space text-sm">Avg. distance</p>
+                        <p class="font-bellefair text-[1.75rem]">384,400 km</p>
+                    </div>
+
+                    <div class="grow lg:grow-0">
+                        <p class="word-space text-sm">Est. travel time</p>
+                        <p class="font-bellefair text-[1.75rem]">3 days</p>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+    </main>
+
+
+</body>
+
+</html>
