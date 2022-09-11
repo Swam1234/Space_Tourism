@@ -52,8 +52,12 @@ const crewPara = document.querySelector("#crew-para");
 
 function addAndRemove(ele, index) {
     ele.addEventListener("click", () => {
+        console.log("work");
         const currentActive = document.querySelector(".opacity-100");
         currentActive.classList.replace("opacity-100", "opacity-20");
+        if (ele.classList.contains("opacity-20")) {
+            ele.classList.remove("opacity-20")
+        }
         ele.classList.add("opacity-100");
 
         crewImg.src = data.crew[index].images.webp;
