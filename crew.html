@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="public/output.css">
+    <script src="navbar.js" defer></script>
+    <script src="crew.js" defer></script>
+</head>
+
+<body class="crew-bg-img h-screen overflow-y-auto font-barlow bg-fixed grid grid-cols-1 grid-rows-[auto_1fr]">
+    <!--Used bg-fixed to sticky-->
+
+    <nav class="flex justify-between  items-center p-6 sm:p-0 sm:pl-6 lg:pl-14 lg:pt-10 self-start">
+
+        <img src="assets/shared/logo.svg" alt="logo" class="">
+
+        <!-- Open Button Navbar -->
+        <button id="navbar-open-btn" class="focus:scale-110 sm:hidden">
+            <img src="assets/shared/icon-hamburger.svg" alt="img" class="">
+        </button>
+
+        <!-- Line between logo and nav menu -->
+        <div class="w-1/3 h-px bg-white opacity-10 relative left-16 hidden lg:block"></div>
+
+        <ul id="navbar"
+            class="text-white uppercase tracking-widest select-none fixed z-20 h-screen top-0 right-0 w-2/3 bg-[#D0D6F9] bg-opacity-5 backdrop-blur-xl flex-col gap-6 pt-36 pl-10 hidden sm:static sm:w-auto sm:flex sm:h-24 sm:p-0 sm:flex-row sm:justify-center sm:px-12 sm:text-sm sm:gap-10 lg:w-2/3 lg:p-0 lg:text-base lg:gap-14 ">
+            <li class="sm:h-full">
+                <a href="index.html"
+                    class="flex gap-4 relative py-1 h-full items-center focus:text-slate-400 lg:gap-2 group lg:hover:text-gray-300 transition-colors ease-out duration-300">
+                    <span class="font-bold sm:hidden lg:block">00</span> <span class="font-normal">Home</span>
+                    <div class="hover-bar"></div>
+                </a>
+            </li>
+            <li class="sm:h-full">
+                <a href="destination.html"
+                    class="flex gap-4 py-1 h-full items-center relative focus:text-slate-400 lg:gap-2 group lg:hover:text-gray-300 transition-colors ease-out duration-300">
+                    <span class="font-bold sm:hidden lg:block">01</span> <span class="font-normal">Destination</span>
+                    <div class="hover-bar"></div>
+                </a>
+            </li>
+            <li class="sm:h-full">
+                <a href="crew.html" class="flex gap-4 py-1 h-full items-center relative focus:text-slate-400 lg:gap-2">
+                    <span class="font-bold sm:hidden lg:block">02</span> <span class="font-normal">Crew</span>
+                    <div class="active-bar"></div>
+                </a>
+            </li>
+            <li class="sm:h-full lg:mr-16">
+                <a href="#"
+                    class="flex gap-4 py-1 h-full items-center relative focus:text-slate-400 lg:gap-2 group lg:hover:text-gray-300 transition-colors ease-out duration-300">
+                    <span class="font-bold sm:hidden lg:block">03</span> <span class="font-normal">Technology</span>
+                    <div class="hover-bar"></div>
+                </a>
+            </li>
+
+            <!-- Close Button Navbar  -->
+            <button id="navbar-close-btn" class="focus:scale-110 absolute top-9 right-6 sm:hidden">
+                <img src="./assets/shared/icon-close.svg" alt="img" class="">
+            </button>
+
+        </ul>
+
+    </nav>
+
+    <main class="text-white lg:self-end">
+
+        <section
+            class="max-w-7xl px-6 sm:px-7 lg:px-12 mx-auto grid grid-cols-1 lg:grid-cols-2 lg:grid-rows-[auto_1fr] h-full lg:h-auto items-center sm:items-end lg:items-center">
+
+            <!-- grid-items-one -->
+            <p class="py-8 uppercase flex gap-4 tracking-widest justify-center items-center sm:justify-start">
+                <span class="text-[#D0D6F9] font-bold md:text-xl">02</span>
+                <span class="md:text-xl">meet your crew</span>
+            </p>
+
+            <!-- grid-items-two -->
+            <div
+                class="border-b border-slate-600 lg:border-none sm:row-start-3 sm:row-end-4 lg:col-start-2 lg:col-end-3 lg:row-start-1 lg:row-end-3">
+                <img id="crew-img" src="assets/crew/image-douglas-hurley.webp" alt="img"
+                    class="block max-w-[65%] lg:max-w-[80%] mx-auto ">
+            </div>
+
+            <!-- grid-items-three -->
+            <div
+                class="pb-4 font-bellefair uppercase text-center lg:text-start flex flex-col-reverse lg:row-start-2 lg:row-end-3 gap-8 lg:gap-20">
+                <ul class="flex justify-center items-center lg:justify-start gap-5 cursor-pointer">
+                    <li id="commander"
+                        class="p-[5px] lg:p-[7px] bg-white rounded-full transition-opacity ease-in duration-150 lg:hover:opacity-50 opacity-100">
+                    </li>
+                    <li id="specialist"
+                        class="p-[5px] lg:p-[7px] bg-white rounded-full transition-opacity ease-in duration-150 lg:hover:opacity-50 opacity-20">
+                    </li>
+                    <li id="pilot"
+                        class="p-[5px] lg:p-[7px] bg-white rounded-full transition-opacity ease-in duration-150 lg:hover:opacity-50 opacity-20">
+                    </li>
+                    <li id="engineer"
+                        class="p-[5px] lg:p-[7px] bg-white rounded-full transition-opacity ease-in duration-150 lg:hover:opacity-50 opacity-20">
+                    </li>
+                </ul>
+                <div class="">
+                    <p id="crew-role" class="uppercase text-base text-gray-400 mb-1 lg:mb-4 sm:text-xl lg:text-3xl">
+                        Commander</p>
+                    <h1 id="crew-name" class="uppercase text-2xl mb-4 lg:mb-7 sm:text-4xl md:text-[2.5rem] lg:text-5xl">
+                        douglas hurley
+                    </h1>
+                    <p id="crew-para"
+                        class="font-barlow text-[#B0B6F9] text-[0.9375rem] tracking-[1px] leading-6 normal-case sm:text-base lg:text-lg sm:leading-7 lg:leading-8 max-w-[58ch] mx-auto lg:ml-0 lg:max-w-[51ch]">
+                        Douglas Gerald Hurley is an American engineer, former Marine Corps pilot
+                        and former NASA astronaut. He launched into space for the third time as
+                        commander of Crew Dragon Demo-2.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+
+</body>
+
+</html>
