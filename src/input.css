@@ -32,18 +32,25 @@
     @apply absolute right-0 top-0 w-[3px] h-full bg-white sm:w-full sm:h-[3px] sm:bottom-0 sm:top-auto;
   }
 
-  .active{
-    @apply bg-white
+  .active {
+    @apply bg-white;
   }
 
-  .crew-bg-img{
-    @apply bg-cover bg-center bg-no-repeat bg-[url('../assets/crew/background-crew-mobile.jpg')] sm:bg-[url('../assets/crew/background-crew-tablet.jpg')] lg:bg-[url('../assets/crew/background-crew-desktop.jpg')]
+  .crew-bg-img {
+    @apply bg-cover bg-center bg-no-repeat bg-[url('../assets/crew/background-crew-mobile.jpg')] sm:bg-[url('../assets/crew/background-crew-tablet.jpg')] lg:bg-[url('../assets/crew/background-crew-desktop.jpg')];
+  }
+
+  .technology-bg-img {
+    @apply bg-cover bg-center bg-no-repeat bg-[url('../assets/technology/background-technology-mobile.jpg')] sm:bg-[url('../assets/technology/background-technology-tablet.jpg')] lg:bg-[url('../assets/technology/background-technology-desktop.jpg')];
+  }
+
+  .active-btn {
+    @apply bg-white text-black;
   }
 }
 
-@layer utilities{
-
-  .word-space{
+@layer utilities {
+  .word-space {
     word-spacing: 0.5rem;
   }
 }
