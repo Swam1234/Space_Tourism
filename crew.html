@@ -8,6 +8,7 @@
     <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
     <title>Frontend Mentor | Space tourism website</title>
     <link rel="stylesheet" href="public/output.css">
+    <link rel="stylesheet" href="./animate_css/animate.min.css">
     <script src="navbar.js" defer></script>
     <script src="crew.js" defer></script>
 </head>
@@ -17,18 +18,18 @@
 
     <nav class="flex justify-between  items-center p-6 sm:p-0 sm:pl-6 lg:pl-14 lg:pt-10 self-start">
 
-        <img src="assets/shared/logo.svg" alt="logo" class="">
+        <img src="assets/shared/logo.svg" alt="logo" class="animate__animated animate__bounceInLeft">
 
         <!-- Open Button Navbar -->
-        <button id="navbar-open-btn" class="focus:scale-110 sm:hidden">
+        <button id="navbar-open-btn" class="focus:scale-110 sm:hidden animate__animated animate__bounceInDown">
             <img src="assets/shared/icon-hamburger.svg" alt="img" class="">
         </button>
 
         <!-- Line between logo and nav menu -->
-        <div class="w-1/3 h-px bg-white opacity-10 relative left-16 hidden lg:block"></div>
+        <div class="w-1/3 h-px bg-white opacity-10 relative left-16 hidden lg:block animate__animated animate__rubberBand"></div>
 
         <ul id="navbar"
-            class="text-white uppercase tracking-widest select-none fixed z-20 h-screen top-0 right-0 w-2/3 bg-[#D0D6F9] bg-opacity-5 backdrop-blur-xl flex-col gap-6 pt-36 pl-10 hidden sm:static sm:w-auto sm:flex sm:h-24 sm:p-0 sm:flex-row sm:justify-center sm:px-12 sm:text-sm sm:gap-10 lg:w-2/3 lg:p-0 lg:text-base lg:gap-14 ">
+            class="text-white uppercase tracking-widest select-none fixed z-20 h-screen top-0 right-0 w-2/3 bg-[#D0D6F9] bg-opacity-5 backdrop-blur-xl flex-col gap-6 pt-36 pl-10 hidden sm:static sm:w-auto sm:flex sm:h-24 sm:p-0 sm:flex-row sm:justify-center sm:px-12 sm:text-sm sm:gap-10 lg:w-2/3 lg:p-0 lg:text-base lg:gap-14 animate__animated animate__zoomIn">
             <li class="sm:h-full">
                 <a href="index.html"
                     class="flex gap-4 relative py-1 h-full items-center focus:text-slate-400 lg:gap-2 group lg:hover:text-gray-300 transition-colors ease-out duration-300">
@@ -69,17 +70,17 @@
     <main class="text-white lg:self-end">
 
         <section
-            class="max-w-7xl px-6 sm:px-7 lg:px-12 mx-auto grid grid-cols-1 lg:grid-cols-2 lg:grid-rows-[auto_1fr] h-full lg:h-auto items-center sm:items-end lg:items-center">
+            class="max-w-7xl px-6 sm:px-7 lg:px-12 mx-auto grid grid-cols-1 lg:grid-cols-2 lg:grid-rows-[auto_1fr] h-full lg:h-auto items-center sm:items-end lg:items-center animate__animated animate__zoomIn">
 
             <!-- grid-items-one -->
-            <p class="py-8 uppercase flex gap-4 tracking-widest justify-center items-center sm:justify-start">
+            <p class="py-8 uppercase flex gap-4 tracking-widest justify-center items-center sm:justify-start ">
                 <span class="text-[#D0D6F9] font-bold md:text-xl">02</span>
                 <span class="md:text-xl">meet your crew</span>
             </p>
 
             <!-- grid-items-two -->
             <div
-                class="border-b border-slate-600 lg:border-none sm:row-start-3 sm:row-end-4 lg:col-start-2 lg:col-end-3 lg:row-start-1 lg:row-end-3">
+                class="border-b border-slate-600 lg:border-none sm:row-start-3 sm:row-end-4 lg:col-start-2 lg:col-end-3 lg:row-start-1 lg:row-end-3 ">
                 <img id="crew-img" src="assets/crew/image-douglas-hurley.webp" alt="img"
                     class="block max-w-[65%] lg:max-w-[80%] mx-auto ">
             </div>
@@ -87,7 +88,7 @@
             <!-- grid-items-three -->
             <div
                 class="pb-4 font-bellefair uppercase text-center lg:text-start flex flex-col-reverse lg:row-start-2 lg:row-end-3 gap-8 lg:gap-20">
-                <ul class="flex justify-center items-center lg:justify-start gap-5 cursor-pointer">
+                <ul class="flex justify-center items-center lg:justify-start gap-5 cursor-pointer ">
                     <li id="commander"
                         class="p-[5px] lg:p-[7px] bg-white rounded-full transition-opacity ease-in duration-150 lg:hover:opacity-50 opacity-100">
                     </li>
